@@ -85,7 +85,7 @@ h3 {
 
     .project-display {
         display: grid;
-        grid-template-columns: 400px 400px 400px;
+        grid-template-columns: 300px 300px 300px;
         grid-template-rows: 250px 250px 250px;
         gap: 1rem;
         grid-template-areas: 
@@ -154,4 +154,7 @@ h3 {
         background-size: cover;
         background-repeat: no-repeat;
     }
+
+
+    @media (max-width: 800px)
 </style>

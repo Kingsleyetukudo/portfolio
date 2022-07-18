@@ -69,6 +69,7 @@
         </div>
    </div>
   </div>
+  
 </template>
 
 <script>
@@ -133,6 +134,7 @@ h3 {
 
     .testimonal-display {
         display: flex;
+        flex-wrap: wrap;
         gap: 2rem;
     }
 

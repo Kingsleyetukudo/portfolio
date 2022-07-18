@@ -100,25 +100,25 @@ h3 {
 }
 
 .skill {
- display: grid;
- grid-template-columns: 1fr 1fr;
+ display: flex;
+ justify-content: space-between;
  align-items: center;
- gap: 8rem;
- width: 80%;
+ gap: 3rem;
+ width: 90%;
  margin: 10rem auto;
 
 }
 
 .skill-bar {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
 
 }
 
 .skill-logo {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     padding: 1rem;
     background-color: #292b2e;
     border-radius: 5px;
@@ -127,6 +127,16 @@ h3 {
 .skill-logo img {
     width: 100%;
     height: 100%;
+}
+
+@media (max-width: 1000px) {
+    .skill {
+        flex-direction: column;
+    }
+
+    h3 {
+        font-size: 2em;
+    }
 }
 
 

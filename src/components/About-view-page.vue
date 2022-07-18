@@ -33,6 +33,7 @@ h5 {
 
 p{
     word-spacing: 2px;
+    font-size: 1.3em;
 }
 
 h1 {
@@ -59,15 +60,16 @@ h1 {
 }
 
 .about {
- display: grid;
- grid-template-columns: 1fr 1fr;
+ display: flex;
+ justify-content: space-between;
  align-items: center;
- gap: 8rem;
- width: 80%;
+ gap: 3rem;
+ width: 90%;
  margin: 0 auto;
 }
 
 .about-image {
+    width: 100%;
     height: 400px;
     border-radius: 5px;
 }
@@ -76,6 +78,15 @@ h1 {
     width: 100%;
     height: 100%;
     border-radius: 5px;
+}
+
+
+@media (max-width: 800px) {
+    .about {
+        flex-direction: column;
+    }
+
+    h1{ font-size: 2em;}
 }
 
 </style>

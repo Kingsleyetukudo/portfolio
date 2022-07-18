@@ -41,6 +41,7 @@ export default {
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-wrap: wrap;
         gap: 3rem;
         margin: 10rem 0;
     }
@@ -77,5 +78,9 @@ export default {
     p, h5{
         padding: 0;
         margin: 0;
+    }
+
+    p {
+        font-size: 1.3em;
     }
 </style>
