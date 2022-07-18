@@ -1,9 +1,11 @@
 <template>
   <div class="footer">
     <div class="let-do-project">
-        <h5>Start a project</h5>
+       <div class="text">
+         <h5>Start a project</h5>
         <p>Interested in working together? We should queue up a chat. I'll buy the coffee.</p>
-         <button class="btn-large btn btn-flat"> Let's do this </button>
+       </div>
+         <button> Let's do this </button>
     </div>
 
    <div class="footer-contents">
@@ -12,23 +14,14 @@
         <p>Creative Designer & Frontend Developer</p>
     </div>
     <div class="useful-links">
-        <h6>Useful Links</h6>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+            <a href="#">Home</a>
+            <a href="#">About</a>   
+            <a href="#">Skills</a>  
+            <a href="#">Portfolio</a>   
+            <a href="#">Contact</a> 
     </div>
     <div class="social-handles">
-        <h6>Social Media</h6>
-        <ul>
-            <li><a href="#">Linkedin</a></li>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">Github</a></li>
-            <li><a href="#">Facebook</a></li>
-        </ul>
+        
     </div>
 
 
@@ -44,6 +37,12 @@ export default {
 
 <style scoped>
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
     .footer {
         background-color: #000;
         position: relative;
@@ -52,8 +51,10 @@ export default {
 
     .footer-contents {
         width: 95%;
-        margin: 10rem auto;
+        margin: 0 auto;
+        margin-top: 11rem;
         display: flex;
+        flex-direction: column;
         gap: 10rem;
     }
 
@@ -77,16 +78,20 @@ export default {
         font-size: 2.5em;
     }
 
-    h6 {
-        font-weight: 600;
-        font-size: 1.2em;
-        color: #ffb742;
+    button{
+        padding: 1rem;
+        background: transparent;
+        border: 2px solid #000;
+        border-radius: 25px;
+        margin-top: 2rem;
     }
 
-    ul {
+    .useful-links {
         display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        flex-wrap: wrap;
     }
 
     a {
@@ -107,7 +112,6 @@ export default {
 
     .let-do-project p {
         color: #000;
-        text-align: center;
         font-size: 1.2em;
         font-weight:600;
     }
@@ -118,5 +122,23 @@ export default {
         border: 2px solid #000;
         border-radius: 50px;
     } 
+
+    @media (max-width: 600px) {
+        .footer-contents {
+            flex-wrap:wrap;
+            gap: 5rem;
+            margin-top: 15rem ;
+        }
+
+        .let-do-project {
+            width: 100%;
+            flex-direction: column;
+            border-radius: 0;
+        }
+
+        .text {
+            text-align: center;
+        }
+    }
 
 </style>

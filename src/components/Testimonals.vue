@@ -115,54 +115,56 @@ p {
 h3 {
     font-weight: 700;
 }
-    .testimonal-col {
-        width: 80%;
-        margin: 10rem auto;
-        display: flex ;
-        gap: 2rem;
-        flex-direction: column;
-        align-items: center;
-    }
+.testimonal-col {
+    width: 80%;
+    margin: 10rem auto;
+    display: flex ;
+    gap: 2rem;
+    flex-direction: column;
+    align-items: center;
+}
 
-    .testimonal-text-col {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 1rem;
-    }
+.testimonal-text-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
 
-    .testimonal-display {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 2rem;
-    }
+.testimonal-display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
 
-    .card-body {
-        width: 350px;
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-        padding: 2rem;
-        background-color: #fff;
-        border-radius: 10px;
-    }
+.card-body {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+}
 
-    .client-details {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-        margin-top: auto;
-    }
+.client-details {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: auto;
+}
 
-    .photo {
-        width: 50px;
-        height: 50px;
-    }
+.photo {
+    width: 50px;
+    height: 50px;
+}
 
-    .photo img {
-        width: 100%;
-        height: 100%;
-    }
+.photo img {
+    width: 100%;
+    height: 100%;
+}
 
 </style>

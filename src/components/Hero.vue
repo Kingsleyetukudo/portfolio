@@ -28,6 +28,7 @@ export default {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 0 1.5rem;
 }
 
 h4 > span {
@@ -47,6 +48,7 @@ h3 {
 p {
     font-size: 1.2em;
     font-weight: 100;
+    text-align: center;
 }
 
 .passport {

@@ -28,7 +28,7 @@ export default {
 
 <style>
 .form-holder {
-    width: 30%;
+    width: 50%;
     margin: 0 auto;
     margin-bottom: 10rem;
 }
@@ -63,6 +63,13 @@ textarea {
 
 textarea:focus{
     border: none;
+}
+
+@media (max-width: 500px) {
+    .form-holder {
+        padding: 0 2rem;
+        width: 100%;
+    }
 }
 
 </style>

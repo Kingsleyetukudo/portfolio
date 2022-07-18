@@ -88,6 +88,10 @@ h3 {
         grid-template-columns: 300px 300px 300px;
         grid-template-rows: 250px 250px 250px;
         gap: 1rem;
+        width: 100%;
+        /* align-items: center; */
+        border: 1px solid red;
+        justify-content: center;
         grid-template-areas: 
         "box1 box2 box3"
         "box1 box4 box3"
@@ -97,12 +101,12 @@ h3 {
     .box {
         border-radius: 5px;
     }
-
+/* 
     .box img {
         width: 100%;
         height: 100%;
         border-radius: 5px;
-    }
+    } */
 
     .pix1 {
         grid-area: box1;
@@ -111,6 +115,7 @@ h3 {
         background-position: center top;
         background-size: cover;
         background-repeat: no-repeat;
+        width: 100%;
     }
 
     .pix2 {
@@ -156,5 +161,28 @@ h3 {
     }
 
 
-    @media (max-width: 800px)
+@media (max-width: 950px) {
+    .project-display {
+         grid-template-columns: 300px 300px;
+        grid-template-rows: 250px 250px 250px;
+        grid-template-areas: 
+        "box1 box2"
+        "box3 box4"
+        "box5 box6";
+    }
+}
+
+@media (max-width: 600px) {
+      .project-display {
+        grid-template-columns: 100%;
+        grid-template-rows: 250px 250px 250px 250px 250px 250px ;
+        grid-template-areas: 
+        "box1"
+        "box3"
+        "box5"
+        "box6"
+        "box4"
+        "box2";
+    }
+}
 </style>
