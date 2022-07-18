@@ -42,7 +42,7 @@ export default {
         align-items: center;
         justify-content: center;
         gap: 3rem;
-        margin: 5rem 0;
+        margin: 10rem 0;
     }
     .counter {
         background-color: #292b2e;

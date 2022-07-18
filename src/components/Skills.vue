@@ -105,7 +105,7 @@ h3 {
  align-items: center;
  gap: 8rem;
  width: 80%;
- margin: 5rem auto;
+ margin: 10rem auto;
 
 }
 

@@ -85,8 +85,8 @@ h3 {
 
     .project-display {
         display: grid;
-        grid-template-columns: 350px 350px 350px;
-        grid-template-rows: 200px 200px 200px;
+        grid-template-columns: 400px 400px 400px;
+        grid-template-rows: 250px 250px 250px;
         gap: 1rem;
         grid-template-areas: 
         "box1 box2 box3"
