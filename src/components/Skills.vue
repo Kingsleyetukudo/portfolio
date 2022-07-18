@@ -7,7 +7,48 @@
         <span class="chip hire center">Hire Me</span>
     </div>
     <div class="skill-bar">
-        
+        <div class="skill-logo">
+            <img src="../assets/html5-log.png" alt="">
+        </div>
+        <div class="skill-logo">
+            <img src="../assets/css-3-logo.png" alt="">
+        </div>
+        <div class="skill-logo">
+            <img src="../assets/js-logo.png" alt="">
+        </div>
+        <div class="skill-logo">
+            <img src="../assets/bootstrap-logo.png" alt="">
+        </div>
+        <div class="skill-logo">
+            <img src="../assets/materialize-logo.png" alt="">
+        </div>
+        <div class="skill-logo">
+            <img src="../assets/tailwind-css-logo.png" alt="">
+        </div>
+        <div class="skill-logo">
+            <img src="../assets/vuejs-logo.png" alt="">
+        </div>
+        <div class="skill-logo">
+            <img src="../assets/typescript-logo.png" alt="">
+        </div>
+        <div class="skill-logo">
+            <img src="../assets/vuetify-logo.png" alt="">
+        </div>
+        <div class="skill-logo">
+            <img src="../assets/npm-logo.png" alt="">
+        </div>
+        <div class="skill-logo">
+            <img src="../assets/git-logo.png" alt="">
+        </div>
+        <div class="skill-logo">
+            <img src="../assets/github-logo.png" alt="">
+        </div>
+        <div class="skill-logo">
+            <img src="../assets/adobe-xd-logo.png" alt="">
+        </div>
+        <div class="skill-logo">
+            <img src="../assets/figma-logo.png" alt="">
+        </div>
     </div>
   </div>
 </template>
@@ -56,17 +97,36 @@ h3 {
     align-items: flex-start;
     flex-direction: column;
     gap: .3rem;
-    border: 1px solid red;
 }
 
 .skill {
  display: grid;
  grid-template-columns: 1fr 1fr;
  align-items: center;
- gap: 3rem;
+ gap: 8rem;
  width: 80%;
  margin: 5rem auto;
 
+}
+
+.skill-bar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+
+}
+
+.skill-logo {
+    width: 80px;
+    height: 80px;
+    padding: 1rem;
+    background-color: #292b2e;
+    border-radius: 5px;
+}
+
+.skill-logo img {
+    width: 100%;
+    height: 100%;
 }
 
 

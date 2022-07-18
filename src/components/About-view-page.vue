@@ -56,21 +56,19 @@ h1 {
     align-items: flex-start;
     flex-direction: column;
     gap: .3rem;
-    border: 1px solid red;
 }
 
 .about {
  display: grid;
  grid-template-columns: 1fr 1fr;
  align-items: center;
- gap: 3rem;
+ gap: 8rem;
  width: 80%;
  margin: 0 auto;
 }
 
 .about-image {
     height: 400px;
-    border: 1px solid red;
     border-radius: 5px;
 }
 
