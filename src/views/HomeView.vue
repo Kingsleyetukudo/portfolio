@@ -7,6 +7,7 @@
     <Project />
     <Testimonal />
     <Contact />
+    <Action />
     <Footer />
   </div>
 </template>
@@ -20,6 +21,7 @@ import Project from '@/components/Project-filter.vue'
 import Testimonal from '@/components/Testimonals.vue'
 import Footer from '@/components/Footer-page.vue'
 import Contact from '@/components/Contact-form.vue'
+import Action from '@/components/Call-to-action.vue'
 export default {
   name: 'HomeView',
   components: {
@@ -30,6 +32,7 @@ export default {
     Project,
     Testimonal,
     Contact,
+    Action,
     Footer
   }
 }

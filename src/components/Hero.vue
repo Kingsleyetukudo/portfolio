@@ -1,7 +1,7 @@
 <template>
   <div class="hero">
     <h4>Hi, I Am <span>Kingsley</span></h4>
-    <h3 class="center">Creative Designer & <br>Frontend Developer</h3>
+    <h3 class="center">Creative Designer <br> <span class="and"> & </span> <br>Frontend Developer</h3>
     <p>I design and code beautifully responsive web pages.</p>
     <div class="passport">
         <img src="../assets/new-logo.png" alt="">
@@ -43,6 +43,7 @@ h3 {
     letter-spacing: 2px;
     margin-top: 1rem;
     font-weight: 600;
+    text-align: center;
 }
 
 p {
@@ -60,6 +61,16 @@ p {
 .passport img {
     width: 100%;
     height: 100%;
+}
+
+.and {
+    color: #ffb742;
+}
+
+@media (max-width: 600px) {
+    h3 {
+        font-size: 2.1em;
+    }
 }
 
 </style>

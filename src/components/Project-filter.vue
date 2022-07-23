@@ -68,16 +68,18 @@ h3 {
         display: flex;
         gap: 3rem;
         width: 100%;
+        align-items: center;
     }
 
     .project-text-col li a {
         color: #fff;
         font-size: 1em;
         font-weight: 600;
+        padding: .5rem;
+        text-align: center;
     }
 
     .project-text-col li a:hover, .project-text-col li a:focus {
-        padding: .5rem;
         background-color: #ffb742;
         color: #000;
         border-radius: 5px;
@@ -89,8 +91,6 @@ h3 {
         grid-template-rows: 250px 250px 250px;
         gap: 1rem;
         width: 100%;
-        /* align-items: center; */
-        border: 1px solid red;
         justify-content: center;
         grid-template-areas: 
         "box1 box2 box3"
@@ -101,12 +101,6 @@ h3 {
     .box {
         border-radius: 5px;
     }
-/* 
-    .box img {
-        width: 100%;
-        height: 100%;
-        border-radius: 5px;
-    } */
 
     .pix1 {
         grid-area: box1;
@@ -163,7 +157,7 @@ h3 {
 
 @media (max-width: 950px) {
     .project-display {
-         grid-template-columns: 300px 300px;
+        grid-template-columns: 300px 300px;
         grid-template-rows: 250px 250px 250px;
         grid-template-areas: 
         "box1 box2"
@@ -183,6 +177,10 @@ h3 {
         "box6"
         "box4"
         "box2";
+    }
+
+    h3 {
+        font-size: 2em;
     }
 }
 </style>

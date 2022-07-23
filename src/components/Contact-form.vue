@@ -4,15 +4,15 @@
         <h3>Contact</h3>
         <form>
            <label>Name: 
-            <input type="text"> 
-            </label>
+            <input type="text" placeholder="Full name"> 
+            </label> <br>
 
            <label>Email
-           <input type="email" class="check">
-           </label>
+           <input type="email" class="check" placeholder="Email">
+           </label> <br>
            <label>Message
-            <textarea></textarea>
-            </label>
+            <textarea placeholder="Message"></textarea>
+            </label> <br>
              <button class="btn btn-flat btn-large">Submit
     <i class="material-icons right">send</i>
   </button>
@@ -47,12 +47,14 @@ label {
 input{
     color: #fff;
     margin-bottom: 2rem;
+    width: 100%;
     outline:#000
 }
 
 
 textarea {
     resize: none;
+    width: 100%;
     height: 200px;
     color: #fff;
     font-size: 1.2em;
