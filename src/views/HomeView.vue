@@ -5,8 +5,9 @@
     <AboutViewPage />
     <Skill />
     <Project />
-    <Testimonal />
+    <!-- <Testimonal /> -->
     <Contact />
+    <!-- <Slide /> -->
     <Action />
     <Footer />
   </div>
@@ -18,10 +19,11 @@ import Counter from '@/components/Counter-boxs.vue'
 import AboutViewPage from '@/components/About-view-page.vue'
 import Skill from '@/components/Skills.vue'
 import Project from '@/components/Project-filter.vue'
-import Testimonal from '@/components/Testimonals.vue'
+// import Testimonal from '@/components/Testimonals.vue'
 import Footer from '@/components/Footer-page.vue'
 import Contact from '@/components/Contact-form.vue'
 import Action from '@/components/Call-to-action.vue'
+// import Slide from '../components/Slide.vue'
 export default {
   name: 'HomeView',
   components: {
@@ -30,10 +32,11 @@ export default {
     AboutViewPage,
     Skill,
     Project,
-    Testimonal,
+    // Testimonal,
     Contact,
     Action,
-    Footer
+    Footer,
+    // Slide
   }
 }
 </script>

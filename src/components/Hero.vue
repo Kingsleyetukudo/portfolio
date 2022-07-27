@@ -4,7 +4,10 @@
     <h3 class="center">Creative Designer <br> <span class="and"> & </span> <br>Frontend Developer</h3>
     <p>I design and code beautifully responsive web pages.</p>
     <div class="passport">
-        <img src="../assets/new-logo.png" alt="">
+        <img src="../assets/profilepic.png" alt="">
+        <div class="profile-image-holder">
+            <!-- <img src="../assets/drawing.svg" alt=""> -->
+        </div>
     </div>
   </div>
 </template>
@@ -21,6 +24,20 @@ export default {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+.profile-image-holder {
+    height: 155px;
+    width: 225px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    /* border-radius: 50%; */
+    background:#ffb742;
+}
+
+.profile-image-holder img {
+    width: 100%;
+    height: 100%;
 }
 
 .hero {
@@ -56,11 +73,15 @@ p {
     width: 230px;
     height: 230px;
     margin-top: 5rem;
+    position: relative;
 }
 
 .passport img {
     width: 100%;
     height: 100%;
+    position: absolute;
+    top: -5rem;
+    left: 0;
 }
 
 .and {

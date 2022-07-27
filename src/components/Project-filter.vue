@@ -3,11 +3,11 @@
    <div class="project-text-col">
      <h4 class="chip">MY WORKS</h4>
     <h3>Featured Works</h3>
-    <ul>
+    <!-- <ul>
         <li><a href="#">All</a></li>
         <li><a href="#">Website Design</a></li>
         <li><a href="#">Website Development</a></li>
-    </ul>
+    </ul> -->
    </div>
 
    <div class="project-display">

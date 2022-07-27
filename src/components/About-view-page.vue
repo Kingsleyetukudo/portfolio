@@ -1,7 +1,7 @@
 <template>
   <div class="about">
     <div class="about-image">
-        <img src="../assets/Kingsley.jpeg" alt="">
+        <img src="../assets/aboutpic.png" alt="">
     </div>
     <div class="about-content">
         <h5 class="chip">WHO I AM</h5>
@@ -56,6 +56,7 @@ h3 {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
+    width: 1000px;
     gap: .3rem;
 }
 
@@ -69,15 +70,19 @@ h3 {
 }
 
 .about-image {
-    width: 100%;
+    width: 1000px;
     height: 400px;
     border-radius: 5px;
+    background: #ffb742;
+    position: relative;
 }
 
 .about-image img {
-    width: 100%;
-    height: 100%;
+    /* width: 100%;
+    height: 100%; */
     border-radius: 5px;
+    position: absolute;
+    top: -6rem;
 }
 
 
@@ -87,6 +92,10 @@ h3 {
     }
 
     h3{ font-size: 2em;}
+
+    .about-image, .about-content {
+        width: 100%;
+    }
 }
 
 </style>

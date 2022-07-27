@@ -43,7 +43,7 @@ export default {
         justify-content: center;
         flex-wrap: wrap;
         gap: 3rem;
-        margin: 10rem 0;
+        margin: 4rem 0 10rem;
     }
     .counter {
         background-color: #292b2e;
