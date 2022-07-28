@@ -1,7 +1,7 @@
 <template>
   <div class="about">
     <div class="about-image">
-        <img src="../assets/aboutpic.png" alt="">
+        <!-- <img src="../assets/aboutpic.png" alt=""> -->
     </div>
     <div class="about-content">
         <h5 class="chip">WHO I AM</h5>
@@ -78,8 +78,8 @@ h3 {
 }
 
 .about-image img {
-    /* width: 100%;
-    height: 100%; */
+    /* width: 100%; */
+    /* height: 100%; */
     border-radius: 5px;
     position: absolute;
     top: -6rem;
