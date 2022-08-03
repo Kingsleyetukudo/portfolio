@@ -11,12 +11,16 @@
    </div>
 
    <div class="project-display">
-    <div class="pix1 box"></div>
-    <div class="pix2 box"></div>
-    <div class="pix3 box"></div>
-    <div class="pix4 box"></div>
-    <div class="pix5 box"></div>
-    <div class="pix6 box"></div>
+    <a href="#" class="pix1 box"><div> <span>View Project</span></div></a>
+    <a href="#" class="pix2 box"><div> <span>View Project</span></div></a>
+    <a href="#" class="pix3 box"><div> <span>View Project</span></div></a>
+    <a href="#" class="pix4 box"><div> <span>View Project</span></div></a>
+    <a href="#" class="pix5 box"><div> <span>View Project</span></div></a>
+    <a href="#" class="pix6 box"><div> <span>View Project</span></div></a>
+   </div>
+
+   <div class="more-btn">
+    <router-link :to="{name : 'projects'}">See More Projects</router-link>
    </div>
   </div>
 </template>
@@ -33,6 +37,30 @@ export default {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box span, .more-btn a {
+    text-decoration: none;
+    padding: 1rem;
+    background: #0000ff;
+    color: #fff;
+    box-shadow: 0 2px 10px #292b2e;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.box span {
+    display: none;
+}
+
+.box:hover span {
+    display: block;
 }
 
 h4 {
@@ -110,6 +138,7 @@ h3 {
         background-size: cover;
         background-repeat: no-repeat;
         width: 100%;
+        height: 100%;
     }
 
     .pix2 {
@@ -163,6 +192,10 @@ h3 {
         "box1 box2"
         "box3 box4"
         "box5 box6";
+    }
+
+    .box span {
+        display: block;
     }
 }
 
