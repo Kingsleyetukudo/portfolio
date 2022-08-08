@@ -1,15 +1,17 @@
 <template>
-      <div class="form-holder">
+      <div class="form-holder" id="contact">
 
-        <h3>Contact</h3>
+        <h3 >Contact</h3>
         <form>
-           <label>Name: 
+          <div class="contact-list">
+             <label>Name: 
             <input type="text" placeholder="Full name"> 
             </label> <br>
 
            <label>Email
            <input type="email" class="check" placeholder="Email">
-           </label> <br>
+           </label>
+          </div>
            <label>Message
             <textarea placeholder="Message"></textarea>
             </label> <br>
@@ -28,7 +30,7 @@ export default {
 
 <style>
 .form-holder {
-    width: 50%;
+    width: 70%;
     margin: 0 auto;
     margin-bottom: 10rem;
 }
@@ -39,9 +41,16 @@ export default {
     border-radius: 10px;
 }
 
+.contact-list {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
 label {
     font-size: 1.2em;
     color: #fff;
+    width: 100%;
 }
 
 input{
@@ -55,7 +64,7 @@ input{
 textarea {
     resize: none;
     width: 100%;
-    height: 200px;
+    height: 100px;
     color: #fff;
     font-size: 1.2em;
     padding: .5rem;
@@ -71,6 +80,17 @@ textarea:focus{
     .form-holder {
         padding: 0 2rem;
         width: 100%;
+    }
+
+    .contact-list {
+        flex-wrap: wrap;
+        gap: .2rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .form-holder {
+        width: 80%;
     }
 }
 

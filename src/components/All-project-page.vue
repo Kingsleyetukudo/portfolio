@@ -1,4 +1,22 @@
 <template>
+
+    
+    <span>{{ touppercase  }}</span>
+    <!-- <div class="post"> -->
+
+    <span v-for="post in snippet" :key="post">{{ post }}</span>
+    <!-- </div> -->
+
+  <div>
+    <button @click="show = !show">Show</button>
+      <transition>
+        <p v-if="show">Lorem, ipsum dolor.</p>
+    </transition>
+  </div>
+
+  <div>
+    <button @click="store.increment()">from B: {{ store.count }}</button>
+  </div>
   <div class="project-display">
     <a href="#" class="pix1 box"><div> <span>View Project</span></div></a>
     <a href="#" class="pix2 box"><div> <span>View Project</span></div></a>
@@ -10,12 +28,62 @@
 </template>
 
 <script>
+import {store} from '../components/store'
 export default {
+    components: {
+        
+    },
+    data() {
+        return {
+            store,
+            show: false,
+            message: 'Testing for filters in vue',
+            posts: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don\'t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn\'t anything embarrassing hidden in the middle of text.',
+            states: [],
+            searchText: ''
+        }
+    },
+
+    computed: {
+        touppercase() {
+            return this.message.toUpperCase()
+        },
+
+        snippet() {
+            return this.posts.slice(0, 50) + '...'
+        },
+        search () {
+            const filtered = this.states.filter(i => {
+                return i.toLowerCase().includes(this.searchText)
+            })
+            return filtered
+        }
+
+    },
+
+    // filters: {
+    //     touppercase(value) {
+    //         return value.toUpperCase()
+    //     }
+    // }
 
 }
 </script>
 
 <style scoped>
+p {
+    border: 1px solid red;
+}
+
+.v-enter-active,
+.v-leave-active {
+    transition: opacity 0.5s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+    opacity: 0;
+}
 
 .project-display {
     display: grid;
@@ -96,5 +164,12 @@ export default {
     background-position: center top;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.post {
+    /* width: 100%; */
+    display: flex;
+    gap: 2rem;
+    color: blue;
 }
 </style>

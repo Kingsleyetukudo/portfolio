@@ -1,8 +1,14 @@
 <template>
   <div class="hero">
-    <h4>Hi, I Am <span>Kingsley</span></h4>
-    <h3 class="center">Creative Designer <br> <span class="and"> & </span> <br>Frontend Developer</h3>
-    <p>I design and code beautifully responsive web pages.</p>
+
+  <!-- <vue-typed-js :strings="['First text', 'Second Text']">
+  <h1 class="typing"></h1>
+</vue-typed-js> -->
+    <div class="text">
+        <h4>I'm <span>Kingsley Etukudo</span> </h4>
+        <h3>Creative Designer & <br>Frontend Developer</h3>
+        <p>I design and code beautifully responsive web pages.</p>
+    </div>
     <div class="passport">
         <img src="../assets/profilepic.png" alt="">
         <div class="profile-image-holder">
@@ -31,7 +37,6 @@ export default {
     width: 225px;
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
-    /* border-radius: 50%; */
     background:#ffb742;
 }
 
@@ -42,10 +47,10 @@ export default {
 
 .hero {
     display: flex;
-    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
     align-items: center;
-    flex-direction: column;
-    padding: 0 1.5rem;
 }
 
 h4 > span {
@@ -53,6 +58,7 @@ h4 > span {
     text-decoration: underline;
     letter-spacing: 2px;
     font-weight: 600;
+    font-size: 1.5em;
 
 }
 
@@ -60,13 +66,12 @@ h3 {
     letter-spacing: 2px;
     margin-top: 1rem;
     font-weight: 600;
-    text-align: center;
 }
 
 p {
     font-size: 1.2em;
     font-weight: 100;
-    text-align: center;
+    color: #ffb742;
 }
 
 .passport {

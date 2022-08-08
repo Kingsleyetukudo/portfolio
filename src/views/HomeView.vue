@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <Hero />
-    <Counter />
+    <!-- <Counter /> -->
     <AboutViewPage />
     <Skill />
     <Project />
@@ -15,7 +15,7 @@
 
 <script>
 import Hero from '@/components/Hero.vue'
-import Counter from '@/components/Counter-boxs.vue'
+// import Counter from '@/components/Counter-boxs.vue'
 import AboutViewPage from '@/components/About-view-page.vue'
 import Skill from '@/components/Skills.vue'
 import Project from '@/components/Project-filter.vue'
@@ -28,7 +28,7 @@ export default {
   name: 'HomeView',
   components: {
     Hero,
-    Counter,
+    // Counter,
     AboutViewPage,
     Skill,
     Project,

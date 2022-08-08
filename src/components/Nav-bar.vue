@@ -6,14 +6,16 @@
      </div>
 
      <div class="nav-list">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Skills</a>
-        <a href="#">Portfolio</a>
-        <a href="#">Contact</a>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
      </div>
 
-     <div class="hire chip"> Hire Me</div>
+     <div class="hire"> 
+        <a href="../assets/ETUKUDO_KINGSLEY_CV.pdf" download> Download CV</a> 
+    </div>
     </div>
 
     <div class="mobile-nav-col">
@@ -30,11 +32,11 @@
 
 <div :class="{'mobile-nav-list' : mobileNav, 'off-moblie-nav-list' : !mobileNav}">
     <div class="span"><i class="material-icons" @click="closeNav">close</i></div>
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Skills</a>
-    <a href="#">Portfolio</a>
-    <a href="#">Contact</a>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
 </div>
 </template>
 
@@ -169,6 +171,11 @@ header {
     border-radius: 5px;
 }
 
+.hire:hover {
+    background-color: #ffb742;
+    border: 3px solid #fff;
+}
+
 .logo {
     width: 80px;
     height: 80px;
@@ -180,9 +187,13 @@ header {
 }
 
 .hire {
-    background-color: #ffb742;
+    background-color: #383e45;
     font-weight: 600;
     cursor: pointer;
+    padding: 1rem;
+    border-radius: 50px;
+    border: 3px solid #ffb742;
+    color: #ffb742;
 }
 
 
