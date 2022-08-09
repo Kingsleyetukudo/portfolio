@@ -14,7 +14,7 @@
      </div>
 
      <div class="hire"> 
-        <a href="../assets/ETUKUDO_KINGSLEY_CV.pdf" download> Download CV</a> 
+        <a href="../assets/ETUKUDO_KINGSLEY_CV.pdf" download="CV.pdf"> Download CV</a> 
     </div>
     </div>
 
@@ -24,7 +24,7 @@
      </div>
 
      <div class="bar"> 
-        <button class="btn-small btn btn-flat">Hire Me</button>
+         
         <span @click="showNav"><i class="material-icons">menu</i></span>
      </div>
     </div>
@@ -37,6 +37,9 @@
     <a href="#skills">Skills</a>
     <a href="#portfolio">Portfolio</a>
     <a href="#contact">Contact</a>
+    <div class="hire"> 
+        <a href="../assets/ETUKUDO_KINGSLEY_CV.pdf" download="CV.pdf"> Download CV</a> 
+    </div>
 </div>
 </template>
 
@@ -110,9 +113,15 @@ header {
     height: 1000px;
     overflow: hidden;
     transition: all .5s ease-in-out;
-
+    z-index: 10000;
     position: absolute;
     top: 0;
+}
+
+.mobile-nav-list .hire {
+    margin-top: 1rem;
+    text-align: center;
+    width: fit-content;
 }
 
 .off-moblie-nav-list {
@@ -123,19 +132,20 @@ header {
     flex-direction: column;
     width: 0;
     height: 0;
+    z-index: 1000;
     overflow: hidden;
     transition: all .5s ease-in-out;
 }
 
 .mobile-nav-list a, .off-moblie-nav-list a {
-    font-size: 2em;
+    font-size: 1.5em;
     color: #fff;
-    border-top: 2px solid #ddd;
-    padding: 2rem 0;
+    /* border-top: 2px solid #ddd; */
+    padding: 1rem 0;
 }
 
-.mobile-nav-list a:last-child {
-    border-bottom: 2px solid #ddd;
+.mobile-nav-list .hire a {
+    border-bottom: none;
 }
 
 .nav-col {
@@ -168,7 +178,7 @@ header {
 .nav-col a:hover {
     background-color: #ffb742;
     color: #000;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .hire:hover {
@@ -191,7 +201,7 @@ header {
     font-weight: 600;
     cursor: pointer;
     padding: 1rem;
-    border-radius: 50px;
+    border-radius: 20px;
     border: 3px solid #ffb742;
     color: #ffb742;
 }

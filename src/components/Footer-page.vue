@@ -4,17 +4,15 @@
    <div class="footer-contents">
      <div class="my-pro">
         <h5>Kingsley Etukudo</h5>
-        <p>Creative Designer & Frontend Developer</p>
+        <p>Creative Frontend Developer</p>
     </div>
-    <div class="useful-links">
-            <a href="#">Home</a>
-            <a href="#">About</a>   
-            <a href="#">Skills</a>  
-            <a href="#">Portfolio</a>   
-            <a href="#">Contact</a> 
-    </div>
+
     <div class="social-handles">
-        
+        <a href="https://github.com/Kingsleyetukudo" target="_blank"><font-awesome-icon icon="fa-brands fa-github" /></a>
+        <a href="https://web.facebook.com/kingsleyetukudo1998" target="_blank"><font-awesome-icon icon="fa-brands fa-facebook" /></a>
+        <a href="https://www.instagram.com/kingsley_etukudo/" target="_blank"><font-awesome-icon icon="fa-brands fa-instagram" /></a>
+        <a href="https://twitter.com/Kamzzyking" target="_blank"><font-awesome-icon icon="fa-brands fa-twitter" /></a>
+        <a href="https://www.linkedin.com/in/kingsley-etukudo-475578225" target="_blank"><font-awesome-icon icon="fa-brands fa-linkedin" /></a>
     </div>
 
 
@@ -41,30 +39,33 @@ export default {
         display: flex;
     }
 
+    .my-pro {
+        text-align: center;
+    }
+
     .footer-contents {
         width: 95%;
         margin: 0 auto;
         display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        padding: 1rem 0;
-    }
-
-    .useful-links {
-        display: flex;
         align-items: center;
         justify-content: center;
-        gap: 2rem;
-        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 2rem 0;
     }
+
+    .social-handles {
+        display: flex;
+        gap: 2rem;
+    }
+
 
     a {
         color: #fff;
-        font-size: 1.1em;
+        font-size: 1.5em;
     }
 
     a:hover{
-        border-bottom: 1px #fff solid;
         color: #ffb742;
     }
 

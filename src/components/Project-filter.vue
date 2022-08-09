@@ -1,5 +1,5 @@
 <template>
-  <div class="project-col">
+  <div class="project-col" id="portfolio">
    <div class="project-text-col">
      <h4 class="chip">MY WORKS</h4>
     <h3>Featured Works</h3>
@@ -11,16 +11,25 @@
    </div>
 
    <div class="project-display">
-    <a href="#" class="pix1 box"><div> <span>View Project</span></div></a>
-    <a href="#" class="pix2 box"><div> <span>View Project</span></div></a>
-    <a href="#" class="pix3 box"><div> <span>View Project</span></div></a>
-    <a href="#" class="pix4 box"><div> <span>View Project</span></div></a>
-    <a href="#" class="pix5 box"><div> <span>View Project</span></div></a>
-    <a href="#" class="pix6 box"><div> <span>View Project</span></div></a>
+    <a href="https://bookmarklandingpagefrontend.netlify.app" class="pix1 box"><div> <span>View Project</span></div></a>
+    <a href="https://jobboardpage.netlify.app" class="pix2 box"><div> <span>View Project</span></div></a>
+    <a href="https://sociapp.netlify.app" class="pix3 box"><div> <span>View Project</span></div></a>
+    <a href="https://adobeclonelandingpage.netlify.app" class="pix4 box"><div> <span>View Project</span></div></a>
+    <a href="https://appleclonelandingpage.netlify.app" class="pix5 box"><div> <span>View Project</span></div></a>
+    <a href="https://ipaddresstrackerfrontend.netlify.app" class="pix6 box"><div> <span>View Project</span></div></a>
    </div>
 
    <div class="more-btn">
-    <router-link :to="{name : 'projects'}">See More Projects</router-link>
+    <a href="https://github.com/Kingsleyetukudo" target="_blank">
+    See More Projects
+     <font-awesome-icon icon="fa-brands fa-github" /> 
+     </a>
+    <!-- <a href="https://app.netlify.com/teams/kingsero/overview" target="_blank">
+    See More Projects
+    <div class="logo-img">
+        <img src="../assets/netlify-logo-svg-vector.svg" alt="">
+    </div>
+     </a> -->
    </div>
   </div>
 </template>
@@ -37,6 +46,15 @@ export default {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+.logo-img {
+    width: 30px
+}
+
+img {
+    width: 100%;
+    height: 100%;
 }
 
 .box {
@@ -143,6 +161,7 @@ h3 {
 
     .pix2 {
         grid-area: box2 ;
+        background-color: #ffb742;
         background-image: url('../assets/jobboard-page.png');
         background-position: center top;
         background-size: cover;
@@ -151,6 +170,7 @@ h3 {
 
     .pix3 {
         grid-area: box3;
+        background-color: #ffb742;
         background-image: url('../assets/user-profile-page.png');
         background-position: center top;
         background-size: cover;
@@ -160,6 +180,7 @@ h3 {
 
     .pix4 {
         grid-area: box4;
+        background-color: #ffb742;
         background-image: url('../assets/adobe-landing-page.png');
         background-position: center top;
         background-size: cover;
@@ -169,6 +190,7 @@ h3 {
     }
     .pix5{
         grid-area: box5;
+        background-color: #ffb742;
         background-image: url('../assets/apple-landing-page.png');
         background-position: center top;
         background-size: cover;
@@ -177,6 +199,7 @@ h3 {
 
     .pix6 {
         grid-area: box6;
+        background-color: #ffb742;
         background-image: url('../assets/IP-address-tracker.png');
         background-position: center top;
         background-size: cover;

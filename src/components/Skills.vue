@@ -1,5 +1,5 @@
 <template>
-  <div class="skill">
+  <div class="skill" id="skills">
       <div class="skill-content">
           <h5 class="chip">MY SKILLS</h5>
         <h3>What My Programming Skills Included:</h3>
@@ -35,10 +35,10 @@
             <img src="../assets/vuetify-logo.png" alt="">
         </div>
         <div class="skill-logo">
-            <img src="../assets/npm-logo.png" alt="">
+            <img src="../assets/Wordpress_Blue_logo.png" alt="">
         </div>
         <div class="skill-logo">
-            <img src="../assets/git-logo.png" alt="">
+            <img src="../assets/Elementor-Logo-Symbol-Red.webp" alt="">
         </div>
         <div class="skill-logo">
             <img src="../assets/github-logo.png" alt="">
@@ -127,6 +127,10 @@ h3 {
 .skill-logo img {
     width: 100%;
     height: 100%;
+}
+
+.skill-logo:hover{
+    background-color: #ffb742;
 }
 
 @media (max-width: 1000px) {

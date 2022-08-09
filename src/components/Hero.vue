@@ -1,9 +1,5 @@
 <template>
-  <div class="hero">
-
-  <!-- <vue-typed-js :strings="['First text', 'Second Text']">
-  <h1 class="typing"></h1>
-</vue-typed-js> -->
+  <div class="hero" id="home">
     <div class="text">
         <h4>I'm <span>Kingsley Etukudo</span> </h4>
         <h3>Creative Designer & <br>Frontend Developer</h3>
@@ -11,9 +7,18 @@
     </div>
     <div class="passport">
         <img src="../assets/profilepic.png" alt="">
-        <div class="profile-image-holder">
+        <!-- <div class="profile-image-holder"> -->
             <!-- <img src="../assets/drawing.svg" alt=""> -->
-        </div>
+        <!-- </div> -->
+    </div>
+
+    <div class="social-handles">
+        <p>Contact me via</p>
+        <a href="https://github.com/Kingsleyetukudo" target="_blank"><font-awesome-icon icon="fa-brands fa-github" /></a>
+        <a href="https://web.facebook.com/kingsleyetukudo1998" target="_blank"><font-awesome-icon icon="fa-brands fa-facebook" /></a>
+        <a href="https://www.instagram.com/kingsley_etukudo/" target="_blank"><font-awesome-icon icon="fa-brands fa-instagram" /></a>
+        <a href="https://twitter.com/Kamzzyking" target="_blank"><font-awesome-icon icon="fa-brands fa-twitter" /></a>
+        <a href="https://www.linkedin.com/in/kingsley-etukudo-475578225" target="_blank"><font-awesome-icon icon="fa-brands fa-linkedin" /></a>
     </div>
   </div>
 </template>
@@ -47,10 +52,34 @@ export default {
 
 .hero {
     display: flex;
-    width: 80%;
+    height: 100vh;
+    width: 90%;
     margin: 0 auto;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.social-handles {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    position: absolute;
+    right: -50px;
+}
+
+.social-handles p {
+    transform: rotate(90deg);
+}
+
+a {
+    color: #fff;
+    font-size: 1.5em;
+}
+
+a:hover{
+    color: #ffb742;
 }
 
 h4 > span {
@@ -75,18 +104,19 @@ p {
 }
 
 .passport {
-    width: 230px;
-    height: 230px;
-    margin-top: 5rem;
-    position: relative;
+    /* width: 230px;
+    height: 230px; */
+    /* margin-top: 5rem; */
+    /* position: relative; */
+    border: 1px solid red;
 }
 
 .passport img {
     width: 100%;
     height: 100%;
-    position: absolute;
+    /* position: absolute;
     top: -5rem;
-    left: 0;
+    left: 0; */
 }
 
 .and {

@@ -31,8 +31,7 @@ export default {
 <style>
 .form-holder {
     width: 70%;
-    margin: 0 auto;
-    margin-bottom: 10rem;
+    margin: 10rem auto;
 }
 
 .form-holder .btn {
@@ -90,7 +89,7 @@ textarea:focus{
 
 @media (max-width: 700px) {
     .form-holder {
-        width: 80%;
+        width: 90%;
     }
 }
 
