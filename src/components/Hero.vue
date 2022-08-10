@@ -2,7 +2,7 @@
   <div class="hero" id="home">
     <div class="text">
         <h4>I'm <span>Kingsley Etukudo</span> </h4>
-        <h3>Creative Designer & <br>Frontend Developer</h3>
+        <h3>Creative Frontend Developer</h3>
         <p>I design and code beautifully responsive web pages.</p>
     </div>
     <div class="passport">
@@ -13,7 +13,7 @@
     </div>
 
     <div class="social-handles">
-        <p>Contact me via</p>
+        <!-- <p>Contact me via:</p> -->
         <a href="https://github.com/Kingsleyetukudo" target="_blank"><font-awesome-icon icon="fa-brands fa-github" /></a>
         <a href="https://web.facebook.com/kingsleyetukudo1998" target="_blank"><font-awesome-icon icon="fa-brands fa-facebook" /></a>
         <a href="https://www.instagram.com/kingsley_etukudo/" target="_blank"><font-awesome-icon icon="fa-brands fa-instagram" /></a>
@@ -64,18 +64,27 @@ export default {
 .social-handles {
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
     gap: 1.5rem;
     position: absolute;
-    right: -50px;
+    right: .2rem;
 }
 
 .social-handles p {
     transform: rotate(90deg);
+    /* margin-bottom: 3rem; */
+    color: #fff;
+    border: 1px solid red;
+    text-align: right;
+    padding: 0;
+    margin: 0;
 }
 
 a {
     color: #fff;
     font-size: 1.5em;
+    text-decoration: none;
 }
 
 a:hover{
@@ -108,7 +117,7 @@ p {
     height: 230px; */
     /* margin-top: 5rem; */
     /* position: relative; */
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .passport img {
@@ -125,7 +134,11 @@ p {
 
 @media (max-width: 600px) {
     h3 {
-        font-size: 2.1em;
+        font-size: 1.5em;
+    }
+
+    h4{
+        font-size: 1.1em;
     }
 }
 

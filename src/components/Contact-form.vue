@@ -2,7 +2,7 @@
       <div class="form-holder" id="contact">
 
         <h3 >Contact</h3>
-        <form>
+        <form action="mailto:kingsleyj90@gmail.com" method="get">
           <div class="contact-list">
              <label>Name: 
             <input type="text" placeholder="Full name"> 

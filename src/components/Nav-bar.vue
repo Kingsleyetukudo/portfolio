@@ -25,7 +25,7 @@
 
      <div class="bar"> 
          
-        <span @click="showNav"><i class="material-icons">menu</i></span>
+        <span @click="showNav"><font-awesome-icon icon="fa-solid fa-bars" /></span>
      </div>
     </div>
 </header>
@@ -72,14 +72,14 @@ export default {
 }
 
 header {
-    padding: 2rem 0;
+    padding: 1rem 0;
     position: relative;
 }
 
 .bar{
     display: flex;
     align-items: center;
-    gap: 2rem;
+    font-size: 3em;
 }
 
 .bar i {
