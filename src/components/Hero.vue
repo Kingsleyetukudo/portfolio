@@ -6,10 +6,12 @@
         <p>I design and code beautifully responsive web pages.</p>
     </div>
     <div class="passport">
-        <img src="../assets/profilepic.png" alt="">
-        <!-- <div class="profile-image-holder"> -->
+        <div class="img-holder">
+            <img src="../assets/my-pic.png" alt="">
+        </div>
+        <div class="profile-image-holder">
             <!-- <img src="../assets/drawing.svg" alt=""> -->
-        <!-- </div> -->
+        </div>
     </div>
 
     <div class="social-handles">
@@ -37,26 +39,49 @@ export default {
     box-sizing: border-box;
 }
 
-.profile-image-holder {
-    height: 155px;
-    width: 225px;
+/* .profile-image-holder {
+    height: 50vh;
+    width: 400px;
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
     background:#ffb742;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+} */
+
+/* .profile-image-holder img {
+    width: 100%;
+    height: 100%;
+} */
+
+.img-holder {
+    /* position: absolute; */
+    z-index: 10;
+    right: 0;
+    bottom: 0;
 }
 
-.profile-image-holder img {
+.img-holder img {
     width: 100%;
     height: 100%;
 }
 
+.passport {
+    border: 1px solid red;
+    position: relative;
+    /* height: 100px; */
+}
+
 .hero {
-    display: flex;
-    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr );
+    /* height: 100vh; */
     width: 90%;
     margin: 0 auto;
-    /* justify-content: space-between; */
+    margin-bottom: 10rem;
     align-items: center;
+    justify-content: space-between;
     flex-wrap: wrap;
     position: relative;
 }
@@ -71,15 +96,15 @@ export default {
     right: .2rem;
 }
 
-.social-handles p {
+/* .social-handles p {
     transform: rotate(90deg);
-    /* margin-bottom: 3rem; */
+    margin-bottom: 3rem;
     color: #fff;
     border: 1px solid red;
     text-align: right;
     padding: 0;
     margin: 0;
-}
+} */
 
 a {
     color: #fff;
@@ -112,27 +137,21 @@ p {
     color: #ffb742;
 }
 
-.passport {
-    /* width: 230px;
-    height: 230px; */
-    /* margin-top: 5rem; */
-    /* position: relative; */
-    /* border: 1px solid red; */
-}
 
-.passport img {
-    width: 100%;
-    height: 100%;
-    /* position: absolute;
-    top: -5rem;
-    left: 0; */
-}
 
 .and {
     color: #ffb742;
 }
 
 @media (max-width: 600px) {
+
+    .hero {
+        align-items: flex-start;
+    }
+
+    .social-handles {
+        top: 5rem;
+    }
     h3 {
         font-size: 1.5em;
     }
