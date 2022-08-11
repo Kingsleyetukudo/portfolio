@@ -1,13 +1,13 @@
 <template>
   <div class="about" id="about">
-    <div class="about-image">
-        <!-- <img src="../assets/aboutpic.png" alt=""> -->
-    </div>
     <div class="about-content">
         <h5 class="chip">WHO I AM</h5>
         <h3>About Me</h3>
         <p>Hi! I’m Kingsley, and I’m a designer & developer who has passion for building clean web applications with intuitive functionality. I enjoy the process of turning ideas into reality using creative solutions. I’m always curious about learning new skills, tools, and concepts. In addition to working on various solo full stack projects, I have worked with creative teams, which involves daily stand-ups and communications, source control, and project management.</p>
-        <span class="chip hire center">Hire Me</span>
+        <a href=""><span class="chip hire center">Hire Me</span></a>
+    </div>
+    <div class="about-image">
+        <!-- <img src="../assets/my-pic1.png" alt=""> -->
     </div>
   </div>
 </template>
@@ -34,6 +34,10 @@ h5 {
 p{
     word-spacing: 2px;
     font-size: 1em;
+}
+
+a span{
+    color: #000;
 }
 
 h3 {
@@ -71,7 +75,7 @@ h3 {
 
 .about-image {
     width: 1000px;
-    height: 400px;
+    height: 20px;
     border-radius: 5px;
     background: #ffb742;
     position: relative;

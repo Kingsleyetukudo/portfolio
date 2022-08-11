@@ -1,9 +1,9 @@
 <template>
      <div class="let-do-project">
        <div class="text">
-         <h5>Let start a project</h5>
+         <h5>Let's start a project</h5>
         <p>Hello there, feel free to contact me at any time, I will get back to you and if it's urgent, my social handle would be better in situations like this.</p> <br>
-        <p>kingsleyj90@gmail.com</p>
+        <h6>kingsleyj90@gmail.com</h6>
        </div>
          <!-- <button> Let's do this </button> -->
         <div class="btn-link">
@@ -24,7 +24,7 @@ export default {
     padding: 1rem;
     width: 80%;
     margin: 0 auto;
-    box-shadow: 0 2px 10px #ffb742;
+    box-shadow: 0 2px 5px #ffb742;
     margin-bottom: 10rem;
     border-radius: 10px;
     display: flex;
@@ -35,7 +35,7 @@ export default {
 
 .let-do-project h5 {
     color: #000;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 2.5em;
 }
 
@@ -47,6 +47,12 @@ a {
     box-shadow: 0 2px 10px #292b2e;
     border-radius: 10px;
     font-weight: 700;
+}
+
+h6 {
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #000;
 }
 
 button{
@@ -71,12 +77,13 @@ button{
    .let-do-project p {
         color: #000;
         font-size: 1.2em;
-        font-weight:500;
+        font-weight:300;
     }
 
 @media (max-width: 700px) {
     .let-do-project {
         flex-direction: column;
+        margin-bottom: 5rem;
     }
 
     .btn-link {

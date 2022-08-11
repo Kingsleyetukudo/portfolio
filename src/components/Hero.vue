@@ -7,10 +7,7 @@
     </div>
     <div class="passport">
         <div class="img-holder">
-            <img src="../assets/my-pic.png" alt="">
-        </div>
-        <div class="profile-image-holder">
-            <!-- <img src="../assets/drawing.svg" alt=""> -->
+            <img src="../assets/my-pic2.png" alt="">
         </div>
     </div>
 
@@ -39,44 +36,34 @@ export default {
     box-sizing: border-box;
 }
 
-/* .profile-image-holder {
-    height: 50vh;
-    width: 400px;
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
-    background:#ffb742;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-} */
-
-/* .profile-image-holder img {
-    width: 100%;
-    height: 100%;
-} */
 
 .img-holder {
-    /* position: absolute; */
-    z-index: 10;
-    right: 0;
-    bottom: 0;
+ width: 100%;
+ height: 100%;
+ padding: 0;
+ border-bottom: 3px solid #ffb742;
+ position: relative;
 }
 
 .img-holder img {
-    width: 100%;
+    width: 100%; 
     height: 100%;
 }
 
+
 .passport {
-    border: 1px solid red;
-    position: relative;
-    /* height: 100px; */
+    /* border: 1px solid red; */
+    height: 700px;
+    /* width: 50%; */
+ /* position: relative; */
+
 }
+
 
 .hero {
     display: grid;
     grid-template-columns: repeat(2, 1fr );
-    /* height: 100vh; */
+    height: 100vh;
     width: 90%;
     margin: 0 auto;
     margin-bottom: 10rem;
@@ -118,9 +105,8 @@ a:hover{
 
 h4 > span {
     color: #ffb742;
-    text-decoration: underline;
     letter-spacing: 2px;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 1.5em;
 
 }
@@ -138,15 +124,13 @@ p {
 }
 
 
-
-.and {
-    color: #ffb742;
-}
-
 @media (max-width: 600px) {
 
     .hero {
         align-items: flex-start;
+        grid-template-columns: 1fr;
+        height: 100%;
+        margin-bottom: 5rem;
     }
 
     .social-handles {
@@ -157,7 +141,12 @@ p {
     }
 
     h4{
-        font-size: 1.1em;
+        font-size: 2em;
+        line-height: 40px;
+    }
+
+    .passport {
+        height: 100%;
     }
 }
 

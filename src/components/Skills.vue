@@ -143,6 +143,10 @@ h3 {
     }
 }
 
-
+@media (max-width: 600px) {
+    .skill {
+        margin: 5rem auto;
+    }
+}
 
 </style>

@@ -15,7 +15,7 @@
             <i class="material-icons">star</i>
             <i class="material-icons">star</i>
             </span>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, animi harum nam rerum suscipit veniam enim beatae voluptate vitae eius. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit iure labore aliquid sapiente ad nam atque, culpa optio inventore libero. Quia architecto nesciunt cupiditate enim nam dolor illo suscipit velit id, ratione aliquid debitis rerum necessitatibus unde quo quasi quibusdam sint. Magni rem ex ducimus cum doloremque odio eaque omnis!</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, animi harum nam rerum suscipit veniam enim beatae voluptate vitae eius. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit iure </p>
 
             <div class="client-details">
                 <div class="photo">
@@ -35,7 +35,7 @@
             <i class="material-icons">star</i>
             <i class="material-icons">star</i>
             </span>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, animi harum nam rerum suscipit veniam enim beatae voluptate vitae eius. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis minima earum fugiat dolorum ex, temporibus eaque debitis. Facilis perferendis quae, aspernatur harum minima accusamus aperiam odio. Fuga quia sunt id sapiente laborum odit amet quas. Placeat libero, consectetur laboriosam, vitae dolorum quis id numquam commodi perspiciatis omnis esse ipsa odit.</p>
+            <p>klskklLorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, animi harum nam rerum suscipit veniam enim beatae voluptate vitae eius. Lorem ipsum </p>
 
             <div class="client-details">
                 <div class="photo">
@@ -55,7 +55,7 @@
             <i class="material-icons">star</i>
             <i class="material-icons">star</i>
             </span>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, animi harum nam rerum suscipit veniam enim beatae voluptate vitae eius. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae maxime deleniti eligendi aperiam amet. Vero corrupti dolor dolorem facere maiores. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam voluptatum facere, quasi cum et a nobis distinctio earum mollitia non?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, animi harum nam rerum suscipit veniam enim beatae voluptate vitae eius. </p>
 
             <div class="client-details">
                 <div class="photo">
@@ -107,7 +107,7 @@ h5 {
 
 p {
     color: #000;
-    font-size: 1em;
+    font-size: .9em;
     word-spacing: 2px;
     letter-spacing: 1px;
 }
@@ -134,18 +134,21 @@ h3 {
 
 .testimonal-display {
     display: flex;
+    width: 100%;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 2rem;
+    overflow: scroll;
+    /* flex-wrap: wrap; */
+    gap: 1rem;
 }
 
 .card-body {
-    width: 350px;
+    width: 500px;
+    height: 300px;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    padding: 2rem;
+    gap: 1rem;
+    padding: 1rem;
     background-color: #fff;
     border-radius: 10px;
 }
@@ -155,6 +158,7 @@ h3 {
     align-items: center;
     gap: 1rem;
     margin-top: auto;
+    align-self: flex-end;
 }
 
 .photo {

@@ -90,6 +90,7 @@ textarea:focus{
 @media (max-width: 700px) {
     .form-holder {
         width: 90%;
+        margin: 5rem auto;
     }
 }
 
