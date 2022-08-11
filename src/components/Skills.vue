@@ -1,10 +1,10 @@
 <template>
   <div class="skill" id="skills">
       <div class="skill-content">
-          <h5 class="chip">MY SKILLS</h5>
+        <h5 class="chip">MY SKILLS</h5>
         <h3>What My Programming Skills Included:</h3>
         <p>I develop simple, intuitive and responsive user interface that helps users get things done with less effort and time with those technologies.</p>
-        <span class="chip hire center">Hire Me</span>
+        <a href="">Contact Me</a>
     </div>
     <div class="skill-bar">
         <div class="skill-logo">
@@ -72,6 +72,15 @@ h5 {
     color: #ffb742;
 }
 
+.skill-content a {
+    border: 3px solid #ffb742;
+    border-radius: 10px;
+    font-weight: 500;
+    padding: .5rem;
+    font-size: .9em;
+    color: #fff;
+}
+
 p{
     word-spacing: 2px;
 }
@@ -96,7 +105,7 @@ h3 {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    gap: .3rem;
+    gap: 1rem;
 }
 
 .skill {

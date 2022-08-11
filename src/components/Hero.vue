@@ -4,6 +4,7 @@
         <h4>I'm <span>Kingsley Etukudo</span> </h4>
         <h3>Creative Frontend Developer</h3>
         <p>I design and code beautifully responsive web pages.</p>
+        <a href="">Contact Me</a>
     </div>
     <div class="passport">
         <div class="img-holder">
@@ -15,6 +16,7 @@
         <!-- <p>Contact me via:</p> -->
         <a href="https://github.com/Kingsleyetukudo" target="_blank"><font-awesome-icon icon="fa-brands fa-github" /></a>
         <a href="https://web.facebook.com/kingsleyetukudo1998" target="_blank"><font-awesome-icon icon="fa-brands fa-facebook" /></a>
+        <a href="https://wa.me/+2348105729585?text=Hi, Am Kingsley Etukudo, from Nigeria may i know you."> <font-awesome-icon icon="fa-brands fa-whatsapp" /></a>
         <a href="https://www.instagram.com/kingsley_etukudo/" target="_blank"><font-awesome-icon icon="fa-brands fa-instagram" /></a>
         <a href="https://twitter.com/Kamzzyking" target="_blank"><font-awesome-icon icon="fa-brands fa-twitter" /></a>
         <a href="https://www.linkedin.com/in/kingsley-etukudo-475578225" target="_blank"><font-awesome-icon icon="fa-brands fa-linkedin" /></a>
@@ -41,13 +43,29 @@ export default {
  width: 100%;
  height: 100%;
  padding: 0;
- border-bottom: 3px solid #ffb742;
+ border-bottom: 1rem solid #ffb742;
+ border-radius: 2rem;
  position: relative;
 }
 
 .img-holder img {
     width: 100%; 
     height: 100%;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.text a {
+    border: 3px solid #ffb742;
+    border-radius: 10px;
+    font-weight: 500;
+    padding: .5rem;
+    font-size: .9em;
 }
 
 
@@ -95,7 +113,7 @@ export default {
 
 a {
     color: #fff;
-    font-size: 1.5em;
+    font-size: 2em;
     text-decoration: none;
 }
 
@@ -124,7 +142,7 @@ p {
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 679px) {
 
     .hero {
         align-items: flex-start;

@@ -4,7 +4,7 @@
         <h5 class="chip">WHO I AM</h5>
         <h3>About Me</h3>
         <p>Hi! I’m Kingsley, and I’m a designer & developer who has passion for building clean web applications with intuitive functionality. I enjoy the process of turning ideas into reality using creative solutions. I’m always curious about learning new skills, tools, and concepts. In addition to working on various solo full stack projects, I have worked with creative teams, which involves daily stand-ups and communications, source control, and project management.</p>
-        <a href=""><span class="chip hire center">Hire Me</span></a>
+        <a href="">Contect Me</a>
     </div>
     <div class="about-image">
         <!-- <img src="../assets/my-pic1.png" alt=""> -->
@@ -36,8 +36,13 @@ p{
     font-size: 1em;
 }
 
-a span{
-    color: #000;
+.about-content a {
+    border: 3px solid #ffb742;
+    border-radius: 10px;
+    font-weight: 500;
+    padding: .5rem;
+    font-size: .9em;
+    color: #fff;
 }
 
 h3 {
@@ -61,7 +66,7 @@ h3 {
     align-items: flex-start;
     flex-direction: column;
     width: 1000px;
-    gap: .3rem;
+    gap: 1rem;
 }
 
 .about {

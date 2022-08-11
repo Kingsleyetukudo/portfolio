@@ -222,7 +222,7 @@ h3 {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
       .project-display {
         grid-template-columns: 100%;
         grid-template-rows: 250px 250px 250px 250px 250px 250px ;
@@ -237,6 +237,10 @@ h3 {
 
     h3 {
         font-size: 2em;
+    }
+
+     .project-col {
+        width: 90%;
     }
 }
 </style>

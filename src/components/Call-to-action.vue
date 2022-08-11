@@ -76,7 +76,7 @@ button{
 
    .let-do-project p {
         color: #000;
-        font-size: 1.2em;
+        font-size: 1em;
         font-weight:300;
     }
 
@@ -84,6 +84,7 @@ button{
     .let-do-project {
         flex-direction: column;
         margin-bottom: 5rem;
+        width: 90%;
     }
 
     .btn-link {
