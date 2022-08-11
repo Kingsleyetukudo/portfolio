@@ -14,7 +14,7 @@
      </div>
 
      <div class="hire"> 
-        <a href="../assets/ETUKUDO_KINGSLEY_CV.pdf" download="CV.pdf"> Download CV</a> 
+        <a href="https://drive.google.com/file/d/1V0WOXcHVCdzEq0jaspeBL9BPD3E434lT/view?usp=sharing" download target="_blank"> Download CV</a> 
     </div>
     </div>
 
@@ -38,7 +38,7 @@
     <a href="#portfolio">Portfolio</a>
     <a href="#contact">Contact</a>
     <div class="hire"> 
-        <a href="../assets/ETUKUDO_KINGSLEY_CV.pdf" download="CV.pdf"> Download CV</a> 
+        <a href="https://drive.google.com/file/d/1V0WOXcHVCdzEq0jaspeBL9BPD3E434lT/view?usp=sharing" download target="_blank"> Download CV</a> 
     </div>
 </div>
 </template>
