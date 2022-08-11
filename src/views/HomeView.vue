@@ -5,7 +5,7 @@
     <AboutViewPage />
     <Skill />
     <Project />
-    <!-- <Testimonal /> -->
+    <Testimonal />
     <Contact />
     <!-- <Slide /> -->
     <Action />
@@ -19,7 +19,7 @@ import Hero from '@/components/Hero.vue'
 import AboutViewPage from '@/components/About-view-page.vue'
 import Skill from '@/components/Skills.vue'
 import Project from '@/components/Project-filter.vue'
-// import Testimonal from '@/components/Testimonals.vue'
+import Testimonal from '@/components/Testimonals.vue'
 import Footer from '@/components/Footer-page.vue'
 import Contact from '@/components/Contact-form.vue'
 import Action from '@/components/Call-to-action.vue'
@@ -32,7 +32,7 @@ export default {
     AboutViewPage,
     Skill,
     Project,
-    // Testimonal,
+    Testimonal,
     Contact,
     Action,
     Footer,

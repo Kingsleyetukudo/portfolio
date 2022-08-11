@@ -15,7 +15,7 @@
             <i class="material-icons">star</i>
             <i class="material-icons">star</i>
             </span>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, animi harum nam rerum suscipit veniam enim beatae voluptate vitae eius. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit iure </p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, animi harum nam rerum suscipit veniam enim beatae voluptate vitae eius.  </p>
 
             <div class="client-details">
                 <div class="photo">
@@ -36,6 +36,46 @@
             <i class="material-icons">star</i>
             </span>
             <p>klskklLorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, animi harum nam rerum suscipit veniam enim beatae voluptate vitae eius. Lorem ipsum </p>
+
+            <div class="client-details">
+                <div class="photo">
+                    <img src="../assets/new-logo.png" alt="">
+                </div>
+                <div class="detail">
+                    <h5>Bashir Ibrahim</h5>
+                    <p>Designer</p>
+                </div>
+            </div>
+        </div>
+        <div class="card-body z-depth-3">
+            <span class="star">
+            <i class="material-icons">star</i>
+            <i class="material-icons">star</i>
+            <i class="material-icons">star</i>
+            <i class="material-icons">star</i>
+            <i class="material-icons">star</i>
+            </span>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, animi harum nam rerum suscipit veniam enim beatae voluptate vitae eius. </p>
+
+            <div class="client-details">
+                <div class="photo">
+                    <img src="../assets/new-logo.png" alt="">
+                </div>
+                <div class="detail">
+                    <h5>Bashir Ibrahim</h5>
+                    <p>Designer</p>
+                </div>
+            </div>
+        </div>
+        <div class="card-body z-depth-3">
+            <span class="star">
+            <i class="material-icons">star</i>
+            <i class="material-icons">star</i>
+            <i class="material-icons">star</i>
+            <i class="material-icons">star</i>
+            <i class="material-icons">star</i>
+            </span>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, animi harum nam rerum suscipit veniam enim beatae voluptate vitae eius. </p>
 
             <div class="client-details">
                 <div class="photo">
@@ -101,6 +141,11 @@ h5 {
     font-size: 1.2em;
 }
 
+
+.star {
+    text-align: right;
+    font-size: 1em;
+}
 .star i {
     color: #ffb742;
 }
@@ -116,7 +161,7 @@ h3 {
     font-weight: 700;
 }
 .testimonal-col {
-    width: 80%;
+    width: 100%;
     margin: 10rem auto;
     display: flex ;
     gap: 2rem;
@@ -135,21 +180,26 @@ h3 {
 .testimonal-display {
     display: flex;
     width: 100%;
+    padding: 2rem;
     align-items: center;
-    justify-content: center;
-    overflow: scroll;
-    /* flex-wrap: wrap; */
-    gap: 1rem;
+    overflow-x: scroll;
+    gap: 1.5rem;
+}
+
+.testimonal-display::-webkit-scrollbar{
+    display: none;
 }
 
 .card-body {
-    width: 500px;
-    height: 300px;
+    max-width: 300px;
+    min-width: 300px;
+    height: 250px;
     display: flex;
     flex-direction: column;
     gap: 1rem;
     padding: 1rem;
-    background-color: #fff;
+    background-color: #ddd;
+    color: #fff;
     border-radius: 10px;
 }
 
@@ -169,6 +219,16 @@ h3 {
 .photo img {
     width: 100%;
     height: 100%;
+}
+
+@media (max-width: 700px) {
+    h3 {
+        font-size: 1.5em;
+    }
+
+    .testimonal-col  {
+        margin: 5rem auto;
+    }
 }
 
 </style>
