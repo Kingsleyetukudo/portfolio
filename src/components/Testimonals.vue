@@ -19,7 +19,7 @@
 
             <div class="client-details">
                 <div class="photo">
-                    <img src="../assets/new-logo.png" alt="">
+                    <img src="../assets/avatar.png" alt="">
                 </div>
                 <div class="detail">
                     <h5>Bashir Ibrahim</h5>
@@ -39,7 +39,7 @@
 
             <div class="client-details">
                 <div class="photo">
-                    <img src="../assets/new-logo.png" alt="">
+                    <img src="../assets/avatar.png" alt="">
                 </div>
                 <div class="detail">
                     <h5>Bashir Ibrahim</h5>
@@ -59,7 +59,7 @@
 
             <div class="client-details">
                 <div class="photo">
-                    <img src="../assets/new-logo.png" alt="">
+                    <img src="../assets/avatar.png" alt="">
                 </div>
                 <div class="detail">
                     <h5>Bashir Ibrahim</h5>
@@ -79,7 +79,7 @@
 
             <div class="client-details">
                 <div class="photo">
-                    <img src="../assets/new-logo.png" alt="">
+                    <img src="../assets/avatar.png" alt="">
                 </div>
                 <div class="detail">
                     <h5>Bashir Ibrahim</h5>
@@ -99,7 +99,7 @@
 
             <div class="client-details">
                 <div class="photo">
-                    <img src="../assets/new-logo.png" alt="">
+                    <img src="../assets/avatar.png" alt="">
                 </div>
                 <div class="detail">
                     <h5>Bashir Ibrahim</h5>
@@ -137,7 +137,7 @@ h4 {
 
 h5 {
     color: #000;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 1.2em;
 }
 
@@ -214,11 +214,13 @@ h3 {
 .photo {
     width: 50px;
     height: 50px;
+    border-radius: 50px;
 }
 
 .photo img {
     width: 100%;
     height: 100%;
+    border-radius: 50px;
 }
 
 @media (max-width: 700px) {
