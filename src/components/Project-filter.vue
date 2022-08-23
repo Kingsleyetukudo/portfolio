@@ -13,7 +13,7 @@
    <div class="project-display">
     <a href="https://bookmarklandingpagefrontend.netlify.app" class="pix1 box"><div> <span>View Project</span></div></a>
     <a href="https://jobboardpage.netlify.app" class="pix2 box"><div> <span>View Project</span></div></a>
-    <a href="https://sociapp.netlify.app" class="pix3 box"><div> <span>View Project</span></div></a>
+    <a href="https://kingschat.netlify.app" class="pix3 box"><div> <span>View Project</span></div></a>
     <a href="https://adobeclonelandingpage.netlify.app" class="pix4 box"><div> <span>View Project</span></div></a>
     <a href="https://appleclonelandingpage.netlify.app" class="pix5 box"><div> <span>View Project</span></div></a>
     <a href="https://ipaddresstrackerfrontend.netlify.app" class="pix6 box"><div> <span>View Project</span></div></a>
